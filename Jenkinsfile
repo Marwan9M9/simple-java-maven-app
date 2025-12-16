@@ -1,5 +1,5 @@
 pipeline {
-    agent agent-1
+    agent { label 'agent-1' }  // specify your Jenkins node here
     stages {
         stage('Build') { 
             steps {
